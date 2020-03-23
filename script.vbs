@@ -1,6 +1,7 @@
 Set objShell = WScript.CreateObject("WScript.Shell")
-objShell.AppActivate ("tabtip.exe") 'select the keyboard
-objShell.SendKeys "^+%S" 'send the selected the keybinding (linking to "dual monitor tools"
+objShell.AppActivate ("osk.exe") 'select the keyboard
+'objShell.SendKeys "^+%S" 'send the selected the keybinding (linking to "dual monitor tools")
+objShell.Moveable = false
 objShell.SendKeys "%{ESC}" 'return focus to what it was before
 
 'Goal: get on screen keyboard to be on tablet while I work on 'external monitor
@@ -15,7 +16,7 @@ objShell.SendKeys "%{ESC}" 'return focus to what it was before
 '
 'end result:
 'https://stackoverflow.com/questions/38815081/how-to-open-tabtip-keyboard-in-a-custom-location
-'
+'https://stackoverflow.com/questions/30418900/vba-to-resize-the-osk-exe-window
 'impossible due to app construction
 '
 'I JUST WASTED 6 HOURS
